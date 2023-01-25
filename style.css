@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topnav {
+  background-color: rgb(61, 58, 58);
+  overflow: hidden;
+}
+
+.topnav a {
+  display: block;
+  float: left;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+
+.topnav a:hover {
+  color: black;
+  background-color: aliceblue;
+}
+
+.topnav a.active {
+  color: rgb(231, 229, 229);
+  background-color: rgb(192, 77, 23);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  
+  .topnav a.icon{
+    display: block;
+    float: right;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .topnav.responsive a{
+    display: block;
+    float: none;
+    text-align: ;
+  }
+}
+
